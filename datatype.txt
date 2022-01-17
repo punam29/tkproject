@@ -1,0 +1,172 @@
+str="Python is an interpreted high-level general-purpose programming language"
+print(str.index("g"))
+print(str.islower())
+
+s2="student@123"
+print("alpha numeric",s2.isalpha())
+print("digit",s2.isdigit())
+print("hello".capitalize())
+print(s2.isalnum())
+# s=s2[2]='y'
+# print(s)
+
+#formatting:
+fruit="apple","mango","banana"
+print(fruit)
+
+fruit="{m} {a} {b}".format(a="apple",m="mango",b="banana")
+print(fruit)
+
+str2="Python is an interpreted high-level general-purpose programming language"
+#to know words using splite()
+list1=str2.split(' ')
+print(list1)
+print("no of words",len(list1))
+
+print(str2.title())
+
+
+list1=["apple","mango","banana"]
+
+str12=" , ".join(list1)
+print(str12,type(str12))
+
+
+
+
+########################################################################################
+
+#in pair of key and value
+#dict is unordered
+#ex:like map
+
+#dict={}
+print(dict)
+#check type
+print(dict,type(dict))
+
+d1={1:"python",2:"course",3:"i like"}
+print(d1,type(d1))
+print(d1.values())
+print(d1.keys())
+
+#using dict() create one dict
+
+
+Dict={}
+print(Dict)
+Dict=dict({1:"python",2:"course",3:"i like"})
+print(Dict)
+
+
+#creating a nested Dict:
+d2={1:"python",2:"course",3:{'a':'Welcome','b':'to','c':"quastech"}}
+print(d2)
+
+
+#adding element:
+d3={}
+print(d3)
+
+d3[0]="welcome"
+d3[1]="to"
+d3[2]="quastech"
+d3['a']=12
+d3['b']=[1,2,3,45,6]
+print(d3)
+
+
+#accessing
+print(d3['a'])
+
+
+#accesing using get()
+print(d3.get('b'))
+
+#initial dict:
+d5={5:"welcome",6:"quastech",7:"institute",'A':{1:"Pyhton",2:"course"},'B':{1:"java",2:"course"}}
+print(d5)
+
+
+
+#deleting using del key:
+
+del d5[6]
+print(d5)
+
+
+#POP()
+d6={5:"welcome",6:"quastech",7:"institute",'b':"welcome"}
+e=d6.popitem()
+print("arbitary values",d6)
+print("deleting Item",e)
+
+
+d6.clear()
+print(d6)
+#########################################################################################
+
+
+
+
+#Tuple is immutable
+t=(12,"pyhon",5.9,333,"a")  #diff datatype allow
+print(t[0])  #indexing allow
+
+t1=("pyhton","interpreater")
+t2=(22,44,2.9,56)
+t3=t1+t2
+print(t3)
+
+t4=("pyhton","interpreater",22,44,2.9,56,22)
+
+# t4[2]=23
+# print(t4)
+
+# t4.pop()
+# print(t4)
+
+print(len(t4))
+print(t4.count(22))
+
+
+for i in t4:
+    print(i)
+
+
+#simillar to append
+t5=(1,2,3,4,5)
+t6=(44,66,77,88,99)
+r=(t5,t6)
+print(r)
+
+
+print(r[1])
+
+
+#extend()
+r2=t5+t6
+print(r2)
+
+t7=("hello"*4)
+print(t7)
+
+r7=(t4*4)+t5
+print(r7)
+
+#slicing
+t8=("pyhton","interpreater",22,44,2.9,56,22)
+
+
+t9=(3455,66,77,888,999,333)
+print(max(t9))
+print(min(t9))
+print(len(t9))
+print(t8[::-1])
+
+#sort:
+print(sorted(t9))
+############################################################################
+
+
+
